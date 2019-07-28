@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+        <div class="col-6">
+                <div class="form-group mt-5" id="student-form" onsubmit="event.preventDefault()">
+                        <label for="formGroupExampleInput" class="d-block">Name</label>
+                        <input type="text" placeholder="Enter Name" class="form-control" id="input-name">
+                        <label for="formGroupExampleInput" class="d-block mt-3">Surname</label>
+                        <input type="text" placeholder="Enter Surname" class="form-control" id="input-surname">
+                        <label for="formGroupExampleInput" class="d-block mt-3">Email</label>
+                        <input type="email" placeholder="example@email.com" class="form-control" id="input-email">
+                        <label for="formGroupExampleInput" class="d-block mt-3">Birthday</label>
+                        <input type="text" placeholder="YYYY-MM-DD" class="form-control" id="input-birthday">
+                        <button type="button" class="btn btn-primary mt-3" onclick="addStudent()">Save</button>
+                </div>
+            
+           </div>
+           <div class="col-6 mt-5">
+               <div class="border border-primary h-100">
+                   <input class="m-5" type="text" placeholder="Enter student email">
+                   <input class="ml-5" type="text" placeholder="Enter score">
+                   <button type="button" class="btn btn-primary float-right mr-3">Add store</button>
+                   <p class="text-center mt-5 font-weight-bold" style="font-size: 27px">Scores of the student</p>
+
+               </div>
+           </div>
+       </div>
+       <h2 class="mt-5">Students List</h2>
+       <table class="table">
+           <thead>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Birthday</th>
+           </thead>
+           <tbody id="table-body">
+
+           </tbody>
+       </table>
+
+   </div> 
+   <script src="js/script.js"></script>
+</body>
+</html>
